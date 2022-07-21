@@ -1,7 +1,6 @@
 .container {
     font-family: 'Montserrat', sans-serif;
     color: aliceblue;
-    justify-content: space-between;
 }
 
 
@@ -11,6 +10,8 @@
     box-sizing: border-box;
     text-decoration: none; 
     list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(47, 123, 189);
 }
 
 
@@ -154,12 +155,12 @@
     width: 100vw;
 }
 
-.productos__menu li {
+.productos__menu {
 
     padding: 1rem;
     border: 1rem;
     border-radius: 1rem;
-    background-color: black;
+    background-color: rgb(122, 43, 43);
     text-transform: uppercase;
 }
 
