@@ -62,6 +62,7 @@
     display:grid;
     grid-template-rows: auto 1fr auto;
     min-height:100vh;
+    overflow-x: hidden;
 }
 
 .videos {
@@ -337,6 +338,15 @@
         padding: 10px;
         margin: 10px;
     }
+
+    .galeria_imagenes{
+        margin: 3em;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+   }
 
     /*------------------------------galeria----------------------------*/
 
