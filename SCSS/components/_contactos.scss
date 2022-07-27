@@ -1,0 +1,32 @@
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(47, 123, 189);
+}
+   /* ------------------------------contactos--------------------------- */
+    .contactos {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 10px;
+        margin: 8px 10px;
+        box-sizing: border-box;
+    }
+
+    .boton_contacto {
+        text-align: center;
+            padding: 2rem;
+        }
+
+    /* ------------------------------contactos--------------------------- */
