@@ -52,7 +52,7 @@
     /* ------------------------------ index main  ------------------------------ */
 
     .bodycontenedor {
-        background-color: #010A0F;
+        background-color: $color_principal;
         font-family: 'Montserrat', sans-serif;
         color: aliceblue;
         text-align:center;
@@ -69,7 +69,6 @@
     }
 
     .textos {
-        border: 10px solid #141433;
         padding: 10px;
         display: grid;
         grid-template-columns: 1fr;
@@ -121,12 +120,6 @@
         text-align: center;
     }
     
-    .productos__menu ul :hover {
-        color: blueviolet;
-        cursor: pointer;
-        transition: .5s;
-    }
-
 
     .productos__menu ul {
         list-style-type: none;
@@ -140,7 +133,6 @@
         padding: 1rem;
         border: 1rem;
         border-radius: 1rem;
-        background-color: black;
         text-transform: uppercase;
     }
 

@@ -1,7 +1,7 @@
 /* ------------------------------ index main  ------------------------------ */
 
 .bodycontenedor {
-    background-color: #010A0F;
+    background-color: $color-principal;
     font-family: 'Montserrat', sans-serif;
     color: aliceblue;
     text-align:center;
@@ -30,7 +30,6 @@
 .index_div {
     display: grid;
     grid-template-columns: 1fr;
-    border: 10px #141433 solid;
     margin: 10px;
 }
 
