@@ -55,19 +55,19 @@
         text-align: center;
         display: grid;
         grid-template-rows: auto 1fr auto;
-        background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)), url(./media/giphy.gif);
+        background-image: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(./media/giphy.gif);
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-    .body__text{
+    .body__text {
         background-color: rgba(0, 0, 0, .6);
         margin: 2em;
         padding: 1em;
         border-radius: 2.5em;
     }
 
-    .textos{
+    .textos {
         padding: 10px;
         display: grid;
         grid-template-columns: 1fr;
@@ -86,20 +86,37 @@
         text-align: center;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        .galeria_article {
+            border: 10px solid #141433;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .galeria_imagenes {
+            margin: 3em;
+            color: black;
+        }
     }
 
-    .galeria_article {
-        border: 10px solid #141433;
-        padding: 10px;
-        margin: 10px;
+
+    .card {
+        transition: transform 500ms ease-in-out;
+        background-image: linear-gradient(rgba(0, 0, 0, .85), rgba(0, 0, 0, .85));
+
+        .precio_container {
+            color: white;
+            margin-bottom: 3em;
+        }
+
+        img {
+            width: 18rem;
+        }
+
     }
 
-    .galeria_imagenes {
-        margin: 3em;
-        color: black;
-    }
-    .card{
-        transition: transform 500ms ease-in-out;    
+    .card-body {
+        height: 100px;
     }
 
     .card:hover {
