@@ -107,6 +107,25 @@
   grid-template-columns: 1fr;
   margin: 10px; }
 
+.neon {
+  text-align: center;
+  font-size: 7em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff; }
+
+.neon:nth-child(1) {
+  font-family: Monoton;
+  animation: neon1 1.5s ease-in-out infinite alternate; }
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de; } }
+
 /* ------------------------------ index main ------------------------------ */
 /*------------------------------productos----------------------------*/
 .productos {
@@ -153,18 +172,18 @@
     padding: 1rem;
     list-style-type: none;
     text-align: center; }
-  .header__navbar ul :hover {
-    color: blueviolet;
-    cursor: pointer;
-    transition: .5s; }
-  .header__navbar li {
-    border: 1rem;
-    border-radius: 1rem;
-    background-color: black;
-    text-transform: uppercase;
-    display: inline;
-    padding-inline-start: 3rem;
-    padding-inline-end: 3rem; }
+    .header__navbar ul .header__navbar li {
+      border: 1rem;
+      border-radius: 1rem;
+      background-color: black;
+      text-transform: uppercase;
+      display: inline;
+      padding-inline-start: 3rem;
+      padding-inline-end: 3rem; }
+    .header__navbar ul .header__navbar ul :hover {
+      color: blueviolet;
+      cursor: pointer;
+      transition: .5s; }
   /*------------------------------header----------------------------*/
   /* ------------------------------ index main  ------------------------------ */
   .bodycontenedor {
@@ -187,6 +206,22 @@
     grid-template-columns: 1fr;
     margin: 10px;
     list-style-type: none; }
+  .neon {
+    text-align: center;
+    font-size: 7em;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1;
+    text-decoration: none;
+    color: #fff; }
+  .neon:nth-child(1) {
+    font-family: Monoton;
+    animation: neon1 1.5s ease-in-out infinite alternate; }
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de; } }
   /* ------------------------------ index main ------------------------------ */
   /*------------------------------galeria----------------------------*/
   .galeria {
@@ -203,7 +238,9 @@
       color: black; }
   .card {
     transition: transform 500ms ease-in-out;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)); }
+    background-image: linear-gradient(rgba(53, 14, 77, 0.85), rgba(0, 0, 0, 0.85));
+    text-shadow: 1px 1px 2px black;
+    color: #cf9bf1; }
     .card .precio_container {
       color: white;
       margin-bottom: 3em; }
@@ -215,23 +252,6 @@
     transform: scale(1.2);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
   /*------------------------------galeria----------------------------*/
-  /*------------------------------productos----------------------------*/
-  .productos {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center; }
-    .productos .productos__menu ul {
-      list-style-type: none;
-      padding: 0px;
-      margin: 0px;
-      width: 100vw; }
-    .productos .productos__menu li {
-      padding: 1rem;
-      border: 1rem;
-      border-radius: 1rem;
-      text-transform: uppercase; }
-  /*------------------------------productos----------------------------*/
   /* ------------------------------contactos--------------------------- */
   .contactos {
     display: grid;
@@ -240,10 +260,20 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding-top: 5em; }
-  .boton_contacto {
-    text-align: center;
-    padding: 2rem; }
+    .contactos .boton_contacto {
+      text-align: center;
+      padding: 2rem; }
   /* ------------------------------contactos--------------------------- */
+  /* ------------------------------ABOUT--------------------------- */
+  .accordion-button {
+    background-image: linear-gradient(rgba(53, 14, 77, 0.85), rgba(0, 0, 0, 0.85));
+    text-shadow: 1px 1px 2px black;
+    color: #cf9bf1; }
+  .accordion-body {
+    background-image: linear-gradient(rgba(53, 14, 77, 0.85), rgba(0, 0, 0, 0.85));
+    text-shadow: 1px 1px 2px black;
+    color: #cf9bf1; }
+  /* ------------------------------ABOUT--------------------------- */
   /* --------------------------footer-------------------------- */
   .footer {
     background-color: #141433;
@@ -279,6 +309,16 @@
   --bs-btn-border-color: #141433;
   /* border color boton */
   --bs-btn-active-bg: #141433; }
+
+.accordion-button {
+  background-image: linear-gradient(rgba(53, 14, 77, 0.85), rgba(0, 0, 0, 0.85));
+  text-shadow: 1px 1px 2px black;
+  color: #cf9bf1; }
+
+.accordion-body {
+  background-image: linear-gradient(rgba(53, 14, 77, 0.85), rgba(0, 0, 0, 0.85));
+  text-shadow: 1px 1px 2px black;
+  color: #cf9bf1; }
 
 * {
   margin: 0;
