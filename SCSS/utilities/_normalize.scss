@@ -25,6 +25,7 @@ a{
     font-family: $font-principal;
 }
 footer{
-    background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85)),
+    background-image: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85));
+    background-color: $color_footer;
 }
 

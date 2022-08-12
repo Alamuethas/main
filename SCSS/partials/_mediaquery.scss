@@ -6,49 +6,6 @@
         text-decoration: none;
     }
 
-    /*------------------------------header----------------------------*/
-    .header {
-        color: aliceblue;
-        background-color: #141433;
-        background-size: contain;
-        text-align: center;
-        height: 10rem;
-        border: 3px solid gray;
-
-
-    }
-
-
-    .header__navbar ul {
-        padding: 1rem;
-        list-style-type: none;
-        text-align: center;
-
-        .header__navbar li {
-            border: 1rem;
-            border-radius: 1rem;
-            background-color: black;
-            text-transform: uppercase;
-            display: inline;
-            padding-inline-start: 3rem;
-            padding-inline-end: 3rem;
-        }
-
-        .header__navbar ul :hover {
-            color: blueviolet;
-            cursor: pointer;
-            transition: .5s;
-
-        }
-    }
-
-
-
-
-
-    /*------------------------------header----------------------------*/
-
-
 
     /* ------------------------------ index main  ------------------------------ */
 
@@ -184,46 +141,10 @@
         text-shadow: 1px 1px 2px black;
         color: $color_textcard;
     }
-
+    .accordion{
+        --bs-accordion-active-color:#cf9bf1;
+        --bs-accordion-btn-focus-box-shadow:none;
+    }
     /* ------------------------------ABOUT--------------------------- */
 
-    /* --------------------------footer-------------------------- */
-    .footer {
-        background-color: #141433;
-        background-size: contain;
-        color: aliceblue;
-        text-align: center;
-        width: 100%;
-        border: 3px solid gray;
-
-        .footer__menu ul {
-            padding: 1rem;
-            list-style-type: none;
-            text-align: center;
-
-        }
-
-
-        .footer__menu ul :hover {
-            color: blueviolet;
-            cursor: pointer;
-            transition: .5s;
-        }
-
-        .footer__menu li {
-            border: 1rem;
-            border-radius: 1rem;
-            background-color: black;
-            padding-inline-start: 3rem;
-            padding-inline-end: 3rem;
-            text-transform: uppercase;
-
-        }
-
-
-    }
-
-
-
-    /* --------------------------footer-------------------------- */
 }

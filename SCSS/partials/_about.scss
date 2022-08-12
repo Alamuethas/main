@@ -9,3 +9,7 @@
     text-shadow: 1px 1px 2px black;
     color: $color_textcard;
 }
+.accordion{
+    --bs-accordion-active-color:#cf9bf1;
+    --bs-accordion-btn-focus-box-shadow:none;
+}

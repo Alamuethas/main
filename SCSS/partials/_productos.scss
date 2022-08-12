@@ -3,7 +3,7 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr;
-    text-align: center;  
+    text-align: center;
 }
 
 .productos__menu ul {
@@ -20,12 +20,36 @@
     text-transform: uppercase;
 }
 
-.img__producto{
+.img__producto {
     height: 260px;
     width: 260px;
 }
 
-.card-body{
+.card {
+    transition: transform 500ms ease-in-out;
+    background-image: linear-gradient(rgba(53, 14, 77, 0.85), rgba(0, 0, 0, .85));
+    text-shadow: 1px 1px 2px black;
+    color: $color_textcard;
+
+    .precio_container {
+        color: white;
+        margin-bottom: 3em;
+    }
+
+    img {
+        width: 18rem;
+    }
+
+
+}
+
+.card-body {
     height: 100px;
 }
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
 /*------------------------------productos----------------------------*/
